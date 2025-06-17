@@ -187,7 +187,6 @@ body {
     height: 400px;
     border-radius: 0%;
     object-fit: cover;
-    mask-image: radial-gradient(ellipse 50% 70% at 50% 30%, black 60%, transparent 100%);
 }
 
 .about-container { display: grid; align-items: flex-start; gap: 5rem; text-align: center; white-space: pre-line;}
