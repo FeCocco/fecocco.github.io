@@ -360,3 +360,14 @@ body {
         font-size: 1.5rem;
     }
 }
+
+/* Estilo para o container do selo no modal */
+.badge-container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna (um em cima do outro) */
+    align-items: center;   /* Centraliza horizontalmente */
+    text-align: center;    /* Centraliza o texto da descrição */
+    gap: 1.5rem;           /* Cria um espaço entre o emblema e o texto */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
