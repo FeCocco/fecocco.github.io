@@ -257,12 +257,34 @@ body {
 }
 
 .projects-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-.project-card { background-color: var(--card-color); border: 1px solid var(--border-color); border-radius: 0.75rem; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 24px rgba(28, 113, 216, 0.2); }
-.project-data { padding: 1.5rem; }
+.project-data {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Isso faz com que ele ocupe todo o espaço vertical do card */
+    height: 100%;
+}
+
 .project-data h3 { font-size: var(--h3-font-size); margin-bottom: 0.5rem; }
 .project-data p { color: var(--text-color-light); margin-bottom: 1.5rem; }
-.project-link { font-weight: 500; color: var(--base-color); text-decoration: none; }
+.project-link {
+    font-weight: 500;
+    color: var(--base-color);
+    text-decoration: none;
+    margin-top: auto; /* ESSENCIAL: isso empurra o link para o fim */
+}
+
 .project-link i { transition: transform 0.3s; }
 .project-link:hover i { transform: translateX(5px); }
 
