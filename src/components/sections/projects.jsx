@@ -1,4 +1,4 @@
-import ProjetoCard from "@/components/projetoCard";
+import ProjetoCard from "@/components/ui/projetoCard";
 import {TruckElectric, CalendarCheck, Terminal, LayoutTemplate} from "lucide-react";
 
 export default function Projects() {

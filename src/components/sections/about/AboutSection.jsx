@@ -3,10 +3,9 @@ import TechBadge from '../../ui/TechBadge';
 import CodeProfile from '../about/CodeProfile';
 
 export default function AboutSection() {
-    // Arrays simples de strings para facilitar a edição
-    const frontendTechs = ['React', 'JavaScript (ES6+)', 'HTML5/CSS3', 'Tailwind', 'Next.js'];
-    const backendTechs = ['Java', 'PHP', 'Node.js', 'Python', 'API REST'];
-    const infraTechs = ['SQL (MySQL/PostgreSQL)', 'Git/GitHub', 'Linux (Red Hat)', 'Docker', 'AWS'];
+    const frontendTechs = ['JavaScript', 'Next.js', 'React', 'HTML', 'CSS', 'Tailwind'];
+    const backendTechs = ['Java', 'PHP', 'C/C++', 'Node.js', 'Python', 'Swift'];
+    const infraTechs = ['SQL', 'Git', 'Linux', 'Docker', 'AWS'];
 
     return (
         <section id="about" className="py-32 bg-[#0a0a0a]">
@@ -36,24 +35,24 @@ export default function AboutSection() {
                         </div>
                     </SpotlightCard>
 
-                    {/* Card 3: Backend */}
+                    {/* Card 3: Ferramentas e Dados */}
                     <SpotlightCard className="flex flex-col justify-between">
                         <div>
-                            <h4 className="mb-4 text-xl font-bold text-[#ededed]">Backend</h4>
+                            <h4 className="mb-4 text-xl font-bold text-[#ededed]">Ferramentas & Dados</h4>
                             <div className="flex flex-wrap gap-2">
-                                {backendTechs.map((tech) => (
+                                {infraTechs.map((tech) => (
                                     <TechBadge key={tech} name={tech} />
                                 ))}
                             </div>
                         </div>
                     </SpotlightCard>
 
-                    {/* Card 4: Ferramentas e Dados (Ocupa 2 colunas para fechar o grid bonito) */}
+                    {/* Card 4: Backend (Ocupa 2 colunas para fechar o grid bonito) */}
                     <SpotlightCard className="md:col-span-2">
                         <div className="flex flex-col h-full justify-center">
-                            <h4 className="mb-4 text-xl font-bold text-[#ededed]">Ferramentas & Dados</h4>
+                            <h4 className="mb-4 text-xl font-bold text-[#ededed]">Backend</h4>
                             <div className="flex flex-wrap gap-2">
-                                {infraTechs.map((tech) => (
+                                {backendTechs.map((tech) => (
                                     <TechBadge key={tech} name={tech} />
                                 ))}
                             </div>
